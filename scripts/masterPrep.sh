@@ -32,8 +32,8 @@ then
     yum -y --enablerepo=epel install pyOpenSSL python-passlib
 fi
 
-wget https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.7.0-1.el7.ans.noarch.rpm
-yum -y localinstall ansible-2.7.0-1.el7.ans.noarch.rpm
+wget https://cbs.centos.org/kojifiles/packages/ansible/2.5.3/1.el7/noarch/ansible-2.5.3-1.el7.noarch.rpm
+yum -y localinstall ansible-2.5.3-1.el7.noarch.rpm
 
 
 # Install java to support metrics
