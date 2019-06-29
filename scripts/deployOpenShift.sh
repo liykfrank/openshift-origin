@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo $(date) " - Starting Script"
+echo "args : $@"
 
 set -e
 
