@@ -31,6 +31,8 @@ then
     echo $(date) " - Installing Ansible, pyOpenSSL and python-passlib"
     yum -y --enablerepo=epel install pyOpenSSL python-passlib
 fi
+wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/p/python-keyczar-0.71c-2.el7.noarch.rpm
+yum -y localinstall python-keyczar-0.71c-2.el7.noarch.rpm
 
 wget https://cbs.centos.org/kojifiles/packages/ansible/2.5.3/1.el7/noarch/ansible-2.5.3-1.el7.noarch.rpm
 yum -y localinstall ansible-2.5.3-1.el7.noarch.rpm
